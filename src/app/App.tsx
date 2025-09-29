@@ -1,15 +1,17 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import reactLogo from "../assets/react.svg";
 import viteLogo from "/vite.svg";
+import { MainLayout } from "../widgets/layouts/main-layout";
+import { Button } from "../shared/ui/Button/Button";
+import { Input } from "../shared/ui/Input/Input";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="text-white p-4">Header</header>
-      <main className="flex-grow p-4">
-        <div className="flex justify-center items-center gap-4">
+      <MainLayout>
+        <div className="flex justify-center items-center gap-4 bg-primary-600">
           <a href="https://vite.dev" target="_blank">
             <img src={viteLogo} className="logo" alt="Vite logo" />
           </a>
@@ -17,9 +19,12 @@ function App() {
             <img src={reactLogo} className="logo react" alt="React logo" />
           </a>
         </div>
-        <h1>Vite + React</h1>
+        <h1 className="text-error-800 font-bold">Vite + React</h1>
         <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
+          <button
+            className="text-green-400"
+            onClick={() => setCount((count) => count + 1)}
+          >
             count is {count}
           </button>
           <p>
@@ -29,9 +34,14 @@ function App() {
         <p className="read-the-docs">
           Click on the Vite and React logos to learn more
         </p>
-        <h1 className="text-3xl font-bold underline my-class">Hello world!</h1>
-      </main>
-      <footer className="text-white p-4">Футер</footer>
+        <h1 className="text-3xl font-bold underline text-mint-500">
+          Hello world!
+        </h1>
+        <div>
+          <Button variant="primary">Отправить</Button>
+          <Input className="max-w-fit" placeholder="Ваш комментарий..." />
+        </div>
+      </MainLayout>
     </div>
   );
 }
