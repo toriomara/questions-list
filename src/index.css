@@ -1,11 +1,48 @@
 @import "tailwindcss";
 
-/* @theme {
-  --color-mint-500: oklch(0.72 0.11 178);
-} */
-
 @theme {
+  --color-primary-925: #18003e;
+  --color-primary-900: #400799;
+  --color-primary-800: #5509cc;
+  --color-primary-700: #6a0bff;
+  --color-primary-600: #883cff;
+  --color-primary-500: #a66dff;
+  --color-primary-400: #c39dff;
+  --color-primary-300: #d2b6ff;
+  --color-primary-200: #e1ceff;
+  --color-primary-100: #f0e7ff;
+
+  --color-error-900: #880727;
   --color-error-800: #af0932;
+  --color-error-700: #d50b3e;
+  --color-error-600: #f3164e;
+  --color-error-500: #f53d6b;
+  --color-error-400: #f76489;
+  --color-error-300: #f98ba6;
+  --color-error-200: #fbb1c4;
+  --color-error-100: #fdd8e1;
+
+  --color-warning-900: #faaf00;
+  --color-warning-800: #ffc233;
+  --color-warning-700: #ffce5c;
+  --color-warning-600: #ffda85;
+
+  --color-success-900: #17663a;
+  --color-success-800: #1e874c;
+  --color-success-700: #26a95f;
+  --color-success-600: #2dca72;
+
+  --color-neutral-900: #191919;
+  --color-neutral-800: #303030;
+  --color-neutral-700: #474747;
+  --color-neutral-600: #5e5e5e;
+  --color-neutral-500: #757575;
+  --color-neutral-400: #8c8c8c;
+  --color-neutral-300: #a3a3a3;
+  --color-neutral-200: #bababa;
+  --color-neutral-100: #d1d1d1;
+  --color-neutral-50: #e8e8e8;
+  --color-neutral-25: #f4f4f4;
 }
 
 #root {
@@ -15,11 +52,6 @@
 
 :root {
   font-family: Manrope, Arial, sans-serif;
-
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -84,10 +116,6 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
-.my-class {
-  @apply text-pink-600;
 }
 
 .logo {

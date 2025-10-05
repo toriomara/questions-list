@@ -9,7 +9,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen ">
       <MainLayout>
         <div className="flex justify-center items-center gap-4 bg-primary-600">
           <a href="https://vite.dev" target="_blank">
@@ -19,10 +19,10 @@ function App() {
             <img src={reactLogo} className="logo react" alt="React logo" />
           </a>
         </div>
-        <h1 className="text-error-800 font-bold">Vite + React</h1>
+        <h1 className="text-primary-900 font-bold">Vite + React</h1>
         <div className="card">
           <button
-            className="text-green-400"
+            className="text-error-400"
             onClick={() => setCount((count) => count + 1)}
           >
             count is {count}
