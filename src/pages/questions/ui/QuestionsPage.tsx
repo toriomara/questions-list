@@ -44,10 +44,11 @@ export function QuestionsPage() {
   return (
     <div className="container flex gap-5">
       {isLoading ? (
-        // <p>Loading questions...</p>
         <QuestionsListSkeleton />
       ) : error ? (
-        <p>Error loading questions</p>
+        <div className="flex text-center items-center justify-center w-full max-w-[804px] bg-white p-5 shadow-md rounded-xl">
+          Error loading questions
+        </div>
       ) : (questionsData?.data?.length ?? 0) > 0 ? (
         <QuestionsList />
       ) : (

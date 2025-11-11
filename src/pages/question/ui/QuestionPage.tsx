@@ -29,7 +29,13 @@ export const QuestionPage = () => {
   }
 
   if (isError || !question) {
-    return <p>Error loading question</p>;
+    return (
+      <div className="container grid gap-5">
+        <div className="flex w-full max-w-[804px] text-center items-center justify-center bg-white p-5 shadow-md rounded-xl">
+          Error loading question
+        </div>
+      </div>
+    );
   }
 
   return (

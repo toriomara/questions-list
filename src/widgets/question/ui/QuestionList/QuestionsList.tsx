@@ -34,7 +34,13 @@ export const QuestionsList = () => {
   }
 
   if (error || !questionsData) {
-    return <p className="text-red-500">Error loading questions</p>;
+    return (
+      <div className="container grid gap-5">
+        <div className="flex w-full max-w-[804px] text-center items-center justify-center bg-white p-5 shadow-md rounded-xl">
+          Error loading questions
+        </div>
+      </div>
+    );
   }
 
   const totalPages = Math.ceil(questionsData.total / questionsData.limit);
