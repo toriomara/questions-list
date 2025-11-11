@@ -44,7 +44,7 @@ export const QuestionsList = () => {
   }
 
   const totalPages = Math.ceil(questionsData.total / questionsData.limit);
-
+  console.log("Base URL:", import.meta.env.VITE_API_BASE_URL);
   return (
     <div className="w-full max-w-[804px] bg-white p-5 shadow-md rounded-xl">
       <p className="mb-6 pb-4 text-2xl border-b border-[#e0e0e0]">Questions</p>
