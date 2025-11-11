@@ -33,7 +33,7 @@ export const questionsApi = baseApi.injectEndpoints({
     }),
 
     getQuestionById: build.query<IQuestionItemResponse, string | number>({
-      query: (id) => `questions/public-questions/${id}`,
+      query: (id) => `/questions/public-questions/${id}`,
     }),
   }),
   overrideExisting: false,
