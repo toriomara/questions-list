@@ -5,7 +5,7 @@ import path from "node:path";
 
 export default defineConfig(({ mode }) => ({
   plugins: [react(), tailwindcss()],
-  base: "/",
+  // base: "/",
   server: {
     port: 3000,
     // proxy: {
@@ -20,7 +20,7 @@ export default defineConfig(({ mode }) => ({
       "/api": {
         target:
           mode === "production"
-            ? "https://api.yeatwork.ru"
+            ? "https://questions-list-dun.vercel.app"
             : "http://localhost:3000",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
