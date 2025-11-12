@@ -3,7 +3,7 @@ import type { RootState } from "../../../../shared/redux/model/store";
 import { useGetSkillsQuery } from "../../../../enteties/skill";
 import { setSkills } from "../../../../widgets/questionFilters/model/filterSlice";
 import { FilterSection } from "../../../../shared/ui/FilterSection/FilterSection";
-import { SkillsFilterSkeleton } from "./SkillsFilterSkeleton"; 
+import { SkillsFilterSkeleton } from "./SkillsFilterSkeleton";
 
 export const SkillsFilter = () => {
   const dispatch = useDispatch();
@@ -24,7 +24,7 @@ export const SkillsFilter = () => {
   }
 
   if (isError) {
-    return <p>Error loading skills</p>;
+    return <p className="my-3">Error loading skills</p>;
   }
 
   return (

@@ -17,7 +17,7 @@ export const questionsApi = baseApi.injectEndpoints({
         rate,
         search,
       }) => ({
-        url: "/questions/public-questions",
+        url: "/questions/public-questions1",
         params: {
           page,
           limit,

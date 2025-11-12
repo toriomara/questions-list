@@ -17,7 +17,7 @@ export const SpecializationsFilter = () => {
       {isLoading ? (
         <Loader />
       ) : isError ? (
-        <p>Error loading specializations</p>
+        <p className="my-3">Error loading specializations</p>
       ) : (
         <FilterSection
           title="Specializations"
