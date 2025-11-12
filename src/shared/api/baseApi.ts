@@ -5,8 +5,8 @@ console.log('Base URL:', import.meta.env.VITE_API_BASE_URL);
 export const baseApi = createApi({
   reducerPath: "questionsApi",
   baseQuery: fetchBaseQuery({
-    // baseUrl: import.meta.env.VITE_API_BASE_URL,
-    baseUrl: "/",
+    baseUrl: import.meta.env.VITE_API_BASE_URL,
+    // baseUrl: "/",
   }),
   endpoints: () => ({}),
   tagTypes: ["Question", "Questions", "Skills", "Specializations"],
