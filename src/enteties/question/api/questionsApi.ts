@@ -17,7 +17,7 @@ export const questionsApi = baseApi.injectEndpoints({
         rate,
         search,
       }) => ({
-        url: "/questions/public-questions1",
+        url: "/api/questions/public-questions1",
         params: {
           page,
           limit,
@@ -33,7 +33,7 @@ export const questionsApi = baseApi.injectEndpoints({
     }),
 
     getQuestionById: build.query<IQuestionItemResponse, string | number>({
-      query: (id) => `/questions/public-questions/${id}`,
+      query: (id) => `/api/questions/public-questions/${id}`,
     }),
   }),
   overrideExisting: false,

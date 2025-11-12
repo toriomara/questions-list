@@ -3,28 +3,17 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "node:path";
 
-export default defineConfig(({ mode }) => ({
+export default defineConfig({
   plugins: [react(), tailwindcss()],
   // base: "/",
   server: {
     port: 3000,
-    // proxy: {
-    //   "/questions": { target: "https://api.yeatwork.ru", changeOrigin: true },
-    //   "/specializations": {
-    //     target: "https://api.yeatwork.ru",
-    //     changeOrigin: true,
-    //   },
-    //   "/skills": { target: "https://api.yeatwork.ru", changeOrigin: true },
-    // },
     proxy: {
       "/api": {
-        target:
-          mode === "production"
-            ? "https://questions-list-dun.vercel.app"
-            : "http://localhost:3000",
+        target: "https://api.yeatwork.ru",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
-        secure: false,
+        secure: true,
       },
     },
   },
@@ -38,23 +27,5 @@ export default defineConfig(({ mode }) => ({
       "@widgets": path.resolve(__dirname, "./src/widgets"),
     },
   },
-}));
+});
 
-// import { defineConfig } from "vite";
-// import react from "@vitejs/plugin-react";
-// export default defineConfig(({ mode }) => ({
-//   plugins: [react()],
-//   server: {
-//     proxy: {
-//       "/api": {
-//         target:
-//           mode === "production"
-//             ? "http://api.example.com"
-//             : "http://localhost:3000",
-//         changeOrigin: true,
-//         rewrite: (path) => path.replace(/^\/api/, ""),
-//         secure: false,
-//       },
-//     },
-//   },
-// }));

@@ -4,7 +4,7 @@ import type { IPaginatedSkills } from "../model/types";
 export const skillsApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     getSkills: builder.query<IPaginatedSkills, void>({
-      query: () => "/skills",
+      query: () => "/api/skills",
     }),
   }),
   overrideExisting: false,

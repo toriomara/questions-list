@@ -12,6 +12,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.2",
     "@tailwindcss/vite": "^4.1.13",
+    "@vercel/node": "^2.3.0",
     "clsx": "^2.1.1",
     "path": "^0.12.7",
     "radix-ui": "^1.4.3",
