@@ -24,7 +24,7 @@ export const SkillsFilter = () => {
   }
 
   if (isError) {
-    return <p className="text-red-500">Error loading skills</p>;
+    return <p>Error loading skills</p>;
   }
 
   return (
