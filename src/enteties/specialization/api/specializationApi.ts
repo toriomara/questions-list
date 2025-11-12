@@ -18,10 +18,11 @@ type SpecializationsResponse = {
 export const specializationApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     getSpecializations: builder.query<SpecializationsResponse, void>({
-      query: () => "/specializations",
+      query: () => "/api/specializations",
     }),
   }),
   overrideExisting: false,
 });
 
 export const { useGetSpecializationsQuery } = specializationApi;
+
