@@ -1,5 +1,3 @@
-import { VercelRequest, VercelResponse } from "@vercel/node";
-
 // export default async function handler(req: VercelRequest, res: VercelResponse) {
 //   const { path, ...params } = req.query;
 
@@ -26,6 +24,7 @@ import { VercelRequest, VercelResponse } from "@vercel/node";
 //   }
 // }
 
-export default function handler(req: VercelRequest, res: VercelResponse) {
-  res.json({ message: "Proxy работает!", path: req.query });
+export default function handler(req, res) {
+  const path = req.url.replace('/api/', ''); // 'specializations'
+  res.json({ message: "Proxy работает!", path });
 }
