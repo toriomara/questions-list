@@ -1,6 +1,6 @@
-![Screenshot of Questions List App](shared/assets/images/screenshot.png "Main interface of the app")
+![Screenshot of Questions List App](src/shared/assets/images/screenshot.png "Main interface of the app")
 
-# Приложение Questions List
+# Questions List App
 
 Добро пожаловать в Questions List — современное, отзывчивое веб-приложение для просмотра, фильтрации и изучения вопросов для интервью. Построено на React и Vite для быстрой разработки и высокой производительности, приложение помогает пользователям готовиться к техническим интервью, предоставляя категоризированные вопросы с деталями, рейтингами и возможностью поиска. Оно следует архитектуре Feature-Sliced Design (FSD) для масштабируемости и поддерживаемости.
 

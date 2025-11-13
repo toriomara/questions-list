@@ -1,13 +1,24 @@
-import { lazy, Suspense } from "react";
+import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import { MainLayout } from "../../../widgets/layouts/main-layout";
 import { HomePage } from "../../../pages/home";
-import { QuestionsPage, QuestionPage } from "../../../pages";
 import { NotFoundPage } from "../../../pages/notFoundPage/ui/NotFoundPage";
 
 const QuestionPageLazy = lazy(() =>
   import("../../../pages/question/ui/QuestionPage").then((module) => ({
     default: module.QuestionPage,
+  }))
+);
+
+const QuestionsPageLazy = lazy(() =>
+  import("../../../pages/questions/ui/QuestionsPage").then((module) => ({
+    default: module.QuestionsPage,
+  }))
+);
+
+const NotFoundPageLazy = lazy(() =>
+  import("../../../pages/notFoundPage/ui/NotFoundPage").then((module) => ({
+    default: module.NotFoundPage,
   }))
 );
 
@@ -23,7 +34,7 @@ export function appRouter() {
         },
         {
           path: "/questions",
-          element: <QuestionsPage />,
+          element: <QuestionsPageLazy />,
         },
         {
           path: "/questions/:id",
@@ -31,7 +42,7 @@ export function appRouter() {
         },
         {
           path: "*",
-          element: <NotFoundPage />,
+          element: <NotFoundPageLazy />,
         },
       ],
     },
