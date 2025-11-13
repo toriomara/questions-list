@@ -1,0 +1,344 @@
+Questions List App
+
+Header Image  
+
+Welcome to Questions List, a modern, responsive web application designed for browsing, filtering, and exploring interview questions. Built with React and Vite for fast development and performance, this app helps users prepare for technical interviews by providing categorized questions with details, ratings, and search capabilities. It follows the Feature-Sliced Design (FSD) architecture for scalability and maintainability.
+
+Features ✨
+
+
+
+Dynamic Question Listing: Fetch and display questions from a backend API with pagination, filtering by specialization, skills, complexity, rate, and search keywords.
+
+Lazy Loading \& Skeletons: Optimized loading with React lazy and Suspense for components, plus skeleton screens for a smooth user experience during data fetching.
+
+Responsive Design: Fully mobile-friendly layout using Tailwind CSS, with sidebar filters visible on larger screens.
+
+State Management: Redux Toolkit and RTK Query for efficient data handling and caching.
+
+Routing: React Router for seamless navigation between home, questions list, and individual question pages.
+
+Error Handling \& Empty States: Graceful handling of errors and empty results with user-friendly messages.
+
+Deployment Ready: Configured for Vercel with serverless proxy to bypass CORS issues when fetching from external APIs.
+
+
+
+The app is structured using FSD principles, dividing code into layers: entities, features, pages, shared, and widgets for better organization and reusability.
+
+Tech Stack 🛠️
+
+
+
+Frontend: React 19, React Router 7
+
+State Management: Redux Toolkit 2, React Redux 9
+
+API Handling: RTK Query for efficient queries and mutations
+
+Styling: Tailwind CSS 4, with PostCSS and Autoprefixer
+
+Build Tool: Vite 5 for lightning-fast HMR and builds
+
+TypeScript: Full type safety with ESLint for code quality
+
+Deployment: Vercel with serverless functions for API proxying
+
+Other: Clsx for class name utilities, Radix UI for accessible components
+
+
+
+Getting Started 🚀
+
+Prerequisites
+
+
+
+Node.js 18+ (LTS recommended)
+
+npm or yarn
+
+
+
+Installation
+
+
+
+Clone the repository:textgit clone https://github.com/yourusername/questions-list.git
+
+cd questions-list
+
+Install dependencies:textnpm install
+
+Set up environment variables (create .env.local):textVITE\_API\_BASE\_URL=https://api.yeatwork.ru  # Your backend API URL
+
+
+
+Running Locally
+
+
+
+Development mode (with HMR):textnpm run devOpen http://localhost:3000 in your browser.
+
+Build for production:textnpm run build
+
+Preview the build:textnpm run preview
+
+Lint the code:textnpm run lint
+
+
+
+Structure Overview 📂
+
+The project follows Feature-Sliced Design (FSD) for modularity:
+
+
+
+entities/: Core domain models (e.g., question, skill).
+
+features/: Feature-specific logic (e.g., filters, pagination).
+
+pages/: Page-level components (e.g., QuestionsPage, QuestionPage).
+
+shared/: Reusable UI and utils (e.g., Loader, Skeleton, Pagination).
+
+widgets/: Composable UI blocks (e.g., QuestionsList, Filters).
+
+api/: Vercel serverless functions for proxying API requests.
+
+
+
+Deployment to Vercel 📦
+
+
+
+Push your code to GitHub.
+
+Log in to Vercel and connect your GitHub repo.
+
+In Vercel dashboard, create a new project and import your repo.
+
+Add environment variable in Settings > Environment Variables:
+
+Name: VITE\_API\_BASE\_URL
+
+Value: https://api.yeatwork.ru
+
+
+
+Deploy — Vercel automatically builds and hosts your app.
+
+Custom domain (optional): Add in Domains section.
+
+
+
+The vercel.json file configures rewrites for API proxying to handle CORS.
+
+Contributing 👥
+
+Contributions are welcome! Follow these steps:
+
+
+
+Fork the repo.
+
+Create a feature branch (git checkout -b feature/AmazingFeature).
+
+Commit changes (git commit -m 'Add AmazingFeature').
+
+Push to the branch (git push origin feature/AmazingFeature).
+
+Open a Pull Request.
+
+
+
+Please ensure code is linted and type-checked before PR.
+
+License 📄
+
+MIT License. See LICENSE for details.
+
+Acknowledgments 🎉
+
+
+
+Inspired by interview prep platforms like LeetCode and Glassdoor.
+
+Thanks to xAI for AI assistance in development.
+
+
+
+If you have questions or issues, open an Issue on GitHub. Happy coding! 🚀
+
+Приложение Questions List
+
+Изображение заголовка  
+
+Добро пожаловать в Questions List — современное, отзывчивое веб-приложение для просмотра, фильтрации и изучения вопросов для интервью. Построено на React и Vite для быстрой разработки и высокой производительности, приложение помогает пользователям готовиться к техническим интервью, предоставляя категоризированные вопросы с деталями, рейтингами и возможностью поиска. Оно следует архитектуре Feature-Sliced Design (FSD) для масштабируемости и поддерживаемости.
+
+Функции ✨
+
+
+
+Динамический список вопросов: Получение и отображение вопросов из backend-API с пагинацией, фильтрацией по специализации, навыкам, сложности, рейтингу и ключевым словам поиска.
+
+Ленивая загрузка и скелетоны: Оптимизированная загрузка с использованием React lazy и Suspense для компонентов, плюс скелетоны для плавного пользовательского опыта во время загрузки данных.
+
+Отзывчивый дизайн: Полностью адаптивный макет с использованием Tailwind CSS, с боковой панелью фильтров, видимой на больших экранах.
+
+Управление состоянием: Redux Toolkit и RTK Query для эффективной обработки данных и кэширования.
+
+Маршрутизация: React Router для плавной навигации между главной страницей, списком вопросов и отдельными страницами вопросов.
+
+Обработка ошибок и пустых состояний: Грациозная обработка ошибок и пустых результатов с дружелюбными сообщениями.
+
+Готово к деплою: Настроено для Vercel с серверлесс-прокси для обхода проблем CORS при запросах к внешним API.
+
+
+
+Приложение структурировано по принципам FSD, разделяя код на слои: entities, features, pages, shared и widgets для лучшей организации и повторного использования.
+
+Технологический стек 🛠️
+
+
+
+Фронтенд: React 19, React Router 7
+
+Управление состоянием: Redux Toolkit 2, React Redux 9
+
+Обработка API: RTK Query для эффективных запросов и мутаций
+
+Стилизация: Tailwind CSS 4, с PostCSS и Autoprefixer
+
+Инструмент сборки: Vite 5 для сверхбыстрого HMR и сборок
+
+TypeScript: Полная типизация с ESLint для качества кода
+
+Деплой: Vercel с серверлесс-функциями для проксирования API-запросов
+
+Другое: Clsx для утилит классов, Radix UI для доступных компонентов
+
+
+
+Начало работы 🚀
+
+Требования
+
+
+
+Node.js 18+ (рекомендуется LTS-версия)
+
+npm или yarn
+
+
+
+Установка
+
+
+
+Клонируйте репозиторий:textgit clone https://github.com/yourusername/questions-list.git
+
+cd questions-list
+
+Установите зависимости:textnpm install
+
+Настройте переменные окружения (создайте .env.local):textVITE\_API\_BASE\_URL=https://api.yeatwork.ru  # URL вашего backend-API
+
+
+
+Запуск локально
+
+
+
+Режим разработки (с HMR):textnpm run devОткройте http://localhost:3000 в браузере.
+
+Сборка для продакшена:textnpm run build
+
+Предпросмотр сборки:textnpm run preview
+
+Линтинг кода:textnpm run lint
+
+
+
+Обзор структуры 📂
+
+Проект следует Feature-Sliced Design (FSD) для модульности:
+
+
+
+entities/: Основные модели домена (например, вопрос, навык).
+
+features/: Логика, специфичная для фич (например, фильтры, пагинация).
+
+pages/: Компоненты уровня страниц (например, QuestionsPage, QuestionPage).
+
+shared/: Повторно используемые UI и утилиты (например, Loader, Skeleton, Pagination).
+
+widgets/: Составные UI-блоки (например, QuestionsList, Filters).
+
+api/: Серверлесс-функции Vercel для проксирования API-запросов.
+
+
+
+Деплой на Vercel 📦
+
+
+
+Запушьте код на GitHub.
+
+Войдите в Vercel и подключите репозиторий GitHub.
+
+В дашборде Vercel создайте новый проект и импортируйте репозиторий.
+
+Добавьте переменную окружения в Settings > Environment Variables:
+
+Name: VITE\_API\_BASE\_URL
+
+Value: https://api.yeatwork.ru
+
+
+
+Деплойте — Vercel автоматически соберёт и разместит приложение.
+
+Кастомный домен (опционально): Добавьте в разделе Domains.
+
+
+
+Файл vercel.json настраивает переадресации для проксирования API, чтобы обойти проблемы CORS.
+
+Вклад 👥
+
+Вклады приветствуются! Следуйте этим шагам:
+
+
+
+Форкните репозиторий.
+
+Создайте ветку фичи (git checkout -b feature/AmazingFeature).
+
+Зафиксируйте изменения (git commit -m 'Add AmazingFeature').
+
+Запушьте ветку (git push origin feature/AmazingFeature).
+
+Откройте Pull Request.
+
+
+
+Пожалуйста, убедитесь, что код линтован и типизирован перед PR.
+
+Лицензия 📄
+
+Лицензия MIT. См. LICENSE для деталей.
+
+Благодарности 🎉
+
+
+
+Вдохновлено платформами подготовки к интервью, такими как LeetCode и Glassdoor.
+
+Спасибо xAI за помощь ИИ в разработке.
+
+
+
+Если у вас есть вопросы или проблемы, откройте Issue на GitHub. Удачного кодирования! 🚀
+

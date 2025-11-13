@@ -1,28 +1,15 @@
-// import { QuestionsList } from "../../../widgets/question";
-// import { Filters } from "../../../widgets/questionFilters";
-
-// export function QuestionsPage() {
-
-//   return (
-//     <div className="container flex gap-5">
-//       <QuestionsList />
-//       <div className="hidden lg:block w-full max-w-[392px]">
-//         <aside className="aside rounded-lg">
-//           <Filters />
-//         </aside>
-//       </div>
-//     </div>
-//   );
-// }
-
+import { useState } from "react";
 import { useSelector } from "react-redux";
-import { QuestionsList } from "../../../widgets/question";
 import { Filters } from "../../../widgets/questionFilters";
 import type { RootState } from "../../../shared/redux/model/store";
 import { useGetQuestionsQuery } from "../../../enteties/question/api/questionsApi";
 import { QuestionsListSkeleton } from "../../../widgets/question/ui/QuestionList/QuestionsListSkeleton";
+import { QuestionsList } from "../../../widgets/question";
 
 export function QuestionsPage() {
+  const [page, setPage] = useState(1);
+  const limit = 10;
+
   const { specialization, skills, complexity, rate, search } = useSelector(
     (state: RootState) => state.filters
   );
@@ -32,8 +19,8 @@ export function QuestionsPage() {
     isLoading,
     error,
   } = useGetQuestionsQuery({
-    page: 1,
-    limit: 10,
+    page,
+    limit,
     specialization,
     skills,
     complexity,
@@ -50,7 +37,14 @@ export function QuestionsPage() {
           Error loading questions
         </div>
       ) : (questionsData?.data?.length ?? 0) > 0 ? (
-        <QuestionsList />
+        <QuestionsList
+          questions={questionsData?.data ?? []}
+          currentPage={page}
+          totalPages={Math.ceil(
+            (questionsData?.total ?? 0) / (questionsData?.limit ?? limit)
+          )}
+          onPageChange={setPage}
+        />
       ) : (
         <div className="flex text-center items-center justify-center w-full max-w-[804px] bg-white p-5 shadow-md rounded-xl">
           <p className="">
