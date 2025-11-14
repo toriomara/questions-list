@@ -2,7 +2,7 @@
 
 ![Screenshot of Questions List App](src/shared/assets/images/screenshot.png "Main interface of the app")
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React]
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
@@ -19,8 +19,8 @@ Welcome to **Questions List**, a modern, responsive web application designed for
 - [Getting started 🚀](#Gettingstarted)
 - [Demo 🛠️](#Demo)
 - [Structure Overview 📂](#StructureOverview)
-- [Deployment to Vercel 📦](#DeploymenttoVercel)
-- [Goal of the Project 🎯](#GoaloftheProject)
+- [Deployment to Vercel 📦](#deployment-to-vercel)
+- [Goal of the Project 🎯](#goal-of-the-project)
 - [License 📄](#License)
 
 ## Features ✨{#features}
@@ -116,9 +116,9 @@ The project follows Feature-Sliced Design (FSD) for modularity:
 - widgets/: Composable UI blocks (e.g., QuestionsList, Filters).
 - api/: Vercel serverless functions for proxying API requests.
 
-![shields-fsd-domain]: https://img.shields.io/badge/Feature--Sliced-Design?style=for-the-badge&color=F2F2F2&labelColor=262224&logoWidth=10&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAALFAAACxQGJ1n/vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB7dKxCQAgDETR0w2cws0cys2cwhEUBbsggikCuVekDHwSQFlYo7Q+8KnmtHdFWMdk2cl5wSsbxGSZw8dm8pX9ZHUTMBUgGU2F718AAAAASUVORK5CYII=
+![shields-fsd-domain]
 
-## Deployment to Vercel 📦
+## Deployment to Vercel
 
 Push your code to GitHub.
 Log in to Vercel and connect your GitHub repo.
@@ -127,7 +127,7 @@ Add environment variable in Settings > Environment Variables:
 Name: VITE_API_BASE_URL
 Value: https://api.yeatwork.ru
 
-## Goal of the Project 🎯
+## Goal of the Project 🎯{#goal-of-the-project}
 
 To exist
 

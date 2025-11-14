@@ -8,7 +8,6 @@ export const QuestionPage = () => {
   const { id } = useParams<{ id: string }>();
   const { data: question, isLoading } = useGetQuestionByIdQuery(id!);
 
-  // Skeleton для data loading (внутри компонента — оптимально для API-запросов)
   if (isLoading || !question) {
     return <QuestionPageSkeleton />;
   }
