@@ -2,10 +2,19 @@
 
 ![Screenshot of Questions List App](src/shared/assets/images/screenshot.png "Main interface of the app")
 
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+
 Welcome to **Questions List**, a modern, responsive web application designed for browsing, filtering, and exploring interview questions. Built with React and Vite for fast development and performance, this app helps users prepare for technical interviews by providing categorized questions with details, ratings, and search capabilities. It follows the Feature-Sliced Design (FSD) architecture for scalability and maintainability.
 
 ## Contents
 
+- [Features ✨](#features)
 - [Tech Stack 🛠️](#TechStack)
 - [Getting started 🚀](#Gettingstarted)
 - [Demo 🛠️](#Demo)
@@ -14,7 +23,7 @@ Welcome to **Questions List**, a modern, responsive web application designed for
 - [Goal of the Project 🎯](#GoaloftheProject)
 - [License 📄](#License)
 
-## Features ✨
+## Features ✨{#features}
 
 - Dynamic Question Listing: Fetch and display questions from a backend API with pagination, filtering by specialization, skills, complexity, rate, and search keywords.
 - Lazy Loading & Skeletons: Optimized loading with React lazy and Suspense for components, plus skeleton screens for a smooth user experience during data fetching.
@@ -29,7 +38,7 @@ The app is structured using FSD principles, dividing code into layers: ==entitie
 ## Tech Stack 🛠️
 
 - Frontend: [React 19](https://react.dev/blog/2024/12/05/react-19), [React Router 7](https://reactrouter.com/)
-- State Management: [Redux Toolkit 2](https://redux-toolkit.js.org/), [React Redux 9] (https://react-redux.js.org/)
+- State Management: [Redux Toolkit 2](https://redux-toolkit.js.org/), [React Redux 9](https://react-redux.js.org/)
 - API Handling: [RTK Query](https://redux-toolkit.js.org/rtk-query/overview) for efficient queries and mutations
 - Styling: [Tailwind CSS 4](https://tailwindcss.com/blog/tailwindcss-v4) with PostCSS and Autoprefixer
 - Build Tool: [Vite 5](https://vite.dev/blog/announcing-vite5) for lightning-fast HMR and builds
@@ -107,7 +116,7 @@ The project follows Feature-Sliced Design (FSD) for modularity:
 - widgets/: Composable UI blocks (e.g., QuestionsList, Filters).
 - api/: Vercel serverless functions for proxying API requests.
 
-[shields-fsd-domain]: https://img.shields.io/badge/Feature--Sliced-Design?style=for-the-badge&color=F2F2F2&labelColor=262224&logoWidth=10&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAALFAAACxQGJ1n/vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB7dKxCQAgDETR0w2cws0cys2cwhEUBbsggikCuVekDHwSQFlYo7Q+8KnmtHdFWMdk2cl5wSsbxGSZw8dm8pX9ZHUTMBUgGU2F718AAAAASUVORK5CYII=
+![shields-fsd-domain]: https://img.shields.io/badge/Feature--Sliced-Design?style=for-the-badge&color=F2F2F2&labelColor=262224&logoWidth=10&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAALFAAACxQGJ1n/vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB7dKxCQAgDETR0w2cws0cys2cwhEUBbsggikCuVekDHwSQFlYo7Q+8KnmtHdFWMdk2cl5wSsbxGSZw8dm8pX9ZHUTMBUgGU2F718AAAAASUVORK5CYII=
 
 ## Deployment to Vercel 📦
 
@@ -134,15 +143,16 @@ If you have questions or issues, open an Issue on GitHub. Happy coding! 🚀
 
 ## Содержание
 
-- [Технологический стек 🛠️](#технологический-стек)
-- [Начало работы 🚀](#начало-работы)
+- [Функции ✨](#функции)
+- [Технологический стек 🛠️](#Технологический-стек)
+- [Начало работы 🚀](#Начало-работы)
 - [Демо 🛠️](#демо)
-- [Обзор структуры 📂](#обзор-структуры)
-- [Деплой на Vercel 📦](#деплой-на-vercel)
-- [Цель проекта 🎯](#цель-проекта)
-- [Лицензия 📄](#лицензия)
+- [Обзор структуры 📂](#Обзор-структуры)
+- [Деплой на Vercel 📦](#Деплой-на-Vercel)
+- [Цель проекта 🎯](#Цель-проекта)
+- [Лицензия 📄](#Лицензия)
 
-## Функции ✨
+## Функции ✨{#функции}
 
 - Динамический список вопросов: Получение и отображение вопросов из backend-API с пагинацией, фильтрацией по специализации, навыкам, сложности, рейтингу и ключевым словам поиска.
 - Ленивая загрузка и скелетоны: Оптимизированная загрузка с использованием React lazy и Suspense для компонентов, плюс скелетоны для плавного пользовательского опыта во время загрузки данных.
