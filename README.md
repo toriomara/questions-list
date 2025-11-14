@@ -2,7 +2,7 @@
 
 ![Screenshot of Questions List App](src/shared/assets/images/screenshot.png "Main interface of the app")
 
-![React]
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
@@ -15,13 +15,13 @@ Welcome to **Questions List**, a modern, responsive web application designed for
 ## Contents
 
 - [Features ✨](#features)
-- [Tech Stack 🛠️](#TechStack)
-- [Getting started 🚀](#Gettingstarted)
+- [Tech Stack 🛠️](#tech-stack)
+- [Getting started 🚀](#getting-started)
 - [Demo 🛠️](#Demo)
-- [Structure Overview 📂](#StructureOverview)
+- [Structure Overview 📂](#structure-overview)
 - [Deployment to Vercel 📦](#deployment-to-vercel)
-- [Goal of the Project 🎯](#goal-of-the-project)
-- [License 📄](#License)
+- [Goal of the Project 🎯](#goal-of-the-project🎯)
+- [License 📄](#license)
 
 ## Features ✨{#features}
 
@@ -127,7 +127,7 @@ Add environment variable in Settings > Environment Variables:
 Name: VITE_API_BASE_URL
 Value: https://api.yeatwork.ru
 
-## Goal of the Project 🎯{#goal-of-the-project}
+## Goal of the Project 🎯
 
 To exist
 
