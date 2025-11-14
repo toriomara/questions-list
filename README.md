@@ -23,7 +23,7 @@ Welcome to **Questions List**, a modern, responsive web application designed for
 - [Goal of the Project 🎯](#goal-of-the-project🎯)
 - [License 📄](#license)
 
-## Features ✨{#features}
+## Features
 
 - Dynamic Question Listing: Fetch and display questions from a backend API with pagination, filtering by specialization, skills, complexity, rate, and search keywords.
 - Lazy Loading & Skeletons: Optimized loading with React lazy and Suspense for components, plus skeleton screens for a smooth user experience during data fetching.
@@ -33,9 +33,9 @@ Welcome to **Questions List**, a modern, responsive web application designed for
 - Error Handling & Empty States: Graceful handling of errors and empty results with user-friendly messages.
 - Deployment Ready: Configured for Vercel with serverless proxy to bypass CORS issues when fetching from external APIs.
 
-The app is structured using FSD principles, dividing code into layers: {green}(==entities==), ==features==, ==pages==, ==shared==, and ==widgets== for better organization and reusability.
+The app is structured using FSD principles, dividing code into layers: *entities*, *features*, *pages*, *shared*, and *widgets* for better organization and reusability.
 
-## Tech Stack 🛠️
+## Tech Stack
 
 - Frontend: [React 19](https://react.dev/blog/2024/12/05/react-19), [React Router 7](https://reactrouter.com/)
 - State Management: [Redux Toolkit 2](https://redux-toolkit.js.org/), [React Redux 9](https://react-redux.js.org/)
@@ -101,7 +101,7 @@ Lint the code:
 npm run lint
 ```
 
-## Demo 🪧
+## Demo
 
 You can view it here: https://questions-list-dun.vercel.app/
 
@@ -152,7 +152,7 @@ If you have questions or issues, open an Issue on GitHub. Happy coding! 🚀
 - [Цель проекта 🎯](#цель-проекта)
 - [Лицензия 📄](#лицензия)
 
-## Функции ✨{#функции}
+## Функции
 
 - Динамический список вопросов: Получение и отображение вопросов из backend-API с пагинацией, фильтрацией по специализации, навыкам, сложности, рейтингу и ключевым словам поиска.
 - Ленивая загрузка и скелетоны: Оптимизированная загрузка с использованием React lazy и Suspense для компонентов, плюс скелетоны для плавного пользовательского опыта во время загрузки данных.
@@ -162,9 +162,9 @@ If you have questions or issues, open an Issue on GitHub. Happy coding! 🚀
 - Обработка ошибок и пустых состояний: Грациозная обработка ошибок и пустых результатов с дружелюбными сообщениями.
 - Готово к деплою: Настроено для Vercel с серверлесс-прокси для обхода проблем CORS при запросах к внешним API.
 
-Приложение структурировано по принципам FSD, разделяя код на слои: ==entities==, ==features==, ==pages==, ==shared== и ==widgets== для лучшей организации и повторного использования.
+Приложение структурировано по принципам FSD, разделяя код на слои: *entities*, *features*, *pages*, *shared* и *widgets* для лучшей организации и повторного использования.
 
-## Технологический стек 🛠️
+## Технологический стек
 
 - Фронтенд: [React 19](https://react.dev/blog/2024/12/05/react-19), [React Router 7](https://reactrouter.com/)
 - Управление состоянием: [Redux Toolkit 2](https://redux-toolkit.js.org/), [React Redux 9] (https://react-redux.js.org/)
