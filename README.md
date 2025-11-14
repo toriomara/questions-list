@@ -33,7 +33,7 @@ Welcome to **Questions List**, a modern, responsive web application designed for
 - Error Handling & Empty States: Graceful handling of errors and empty results with user-friendly messages.
 - Deployment Ready: Configured for Vercel with serverless proxy to bypass CORS issues when fetching from external APIs.
 
-The app is structured using FSD principles, dividing code into layers: ==entities==, ==features==, ==pages==, ==shared==, and ==widgets== for better organization and reusability.
+The app is structured using FSD principles, dividing code into layers: {green}(==entities==), ==features==, ==pages==, ==shared==, and ==widgets== for better organization and reusability.
 
 ## Tech Stack 🛠️
 
@@ -46,11 +46,11 @@ The app is structured using FSD principles, dividing code into layers: ==entitie
 - Deployment: [Vercel](https://vercel.com/) with serverless functions for API proxying
 - Other: Clsx for class name utilities, Radix UI for accessible components
 
-## Getting Started 🚀
+## Getting Started
 
 ### Prerequisites
 
-- Node.js 18+ (рекомендуется LTS-версия)
+- Node.js 18+ (LTS version recommended)
 - npm или yarn
 
 ### Installation
@@ -76,7 +76,7 @@ VITE_API_BASE_URL=https://api.yeatwork.ru  # URL вашего backend-API
 
 ### Running Locally
 
-Режим разработки (с HMR):
+Development mode (with HMR):
 
 ```sh
 npm run dev
@@ -105,7 +105,7 @@ npm run lint
 
 You can view it here: https://questions-list-dun.vercel.app/
 
-## Structure Overview 📂
+## Structure Overview
 
 The project follows Feature-Sliced Design (FSD) for modularity:
 
@@ -127,13 +127,13 @@ Add environment variable in Settings > Environment Variables:
 Name: VITE_API_BASE_URL
 Value: https://api.yeatwork.ru
 
-## Goal of the Project 🎯
+## Goal of the Project
 
 To exist
 
-## Лицензия 📄
+## License
 
-Лицензия MIT. См. LICENSE для деталей
+MIT License. See LICENSE for details.
 
 If you have questions or issues, open an Issue on GitHub. Happy coding! 🚀
 
@@ -144,13 +144,13 @@ If you have questions or issues, open an Issue on GitHub. Happy coding! 🚀
 ## Содержание
 
 - [Функции ✨](#функции)
-- [Технологический стек 🛠️](#Технологический-стек)
-- [Начало работы 🚀](#Начало-работы)
+- [Технологический стек 🛠️](#технологический-стек)
+- [Начало работы 🚀](#начало-работы)
 - [Демо 🛠️](#демо)
-- [Обзор структуры 📂](#Обзор-структуры)
-- [Деплой на Vercel 📦](#Деплой-на-Vercel)
-- [Цель проекта 🎯](#Цель-проекта)
-- [Лицензия 📄](#Лицензия)
+- [Обзор структуры 📂](#обзор-структуры)
+- [Деплой на Vercel 📦](#деплой-на-vercel)
+- [Цель проекта 🎯](#цель-проекта)
+- [Лицензия 📄](#лицензия)
 
 ## Функции ✨{#функции}
 
@@ -174,7 +174,7 @@ If you have questions or issues, open an Issue on GitHub. Happy coding! 🚀
 - [TypeScript](https://www.typescriptlang.org/)
 - Деплой: [Vercel](https://vercel.com/) с серверлесс-функциями для проксирования API-запросов
 
-## Начало работы 🚀
+## Начало работы
 
 ### Требования
 
@@ -229,11 +229,11 @@ npm run build
 npm run lint
 ```
 
-## Демо 🪧
+## Демо
 
 Посмотреть можно здесь: https://questions-list-dun.vercel.app/
 
-## Обзор структуры 📂
+## Обзор структуры
 
 - entities/: Основные модели домена (например, вопрос, навык).
 - features/: Логика, специфичная для фич (например, фильтры, пагинация).
@@ -244,7 +244,7 @@ npm run lint
 
 [shields-fsd-domain]: https://img.shields.io/badge/Feature--Sliced-Design?style=for-the-badge&color=F2F2F2&labelColor=262224&logoWidth=10&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAALFAAACxQGJ1n/vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB7dKxCQAgDETR0w2cws0cys2cwhEUBbsggikCuVekDHwSQFlYo7Q+8KnmtHdFWMdk2cl5wSsbxGSZw8dm8pX9ZHUTMBUgGU2F718AAAAASUVORK5CYII=
 
-## Деплой на Vercel 📦
+## Деплой на Vercel
 
 Запушьте код на GitHub.
 Войдите в Vercel и подключите репозиторий GitHub.
@@ -253,11 +253,11 @@ npm run lint
 Name: VITE_API_BASE_URL
 Value: https://api.yeatwork.ru
 
-## Зачем вы разработали этот проект? 🎯
+## Зачем вы разработали этот проект?
 
 Чтобы был
 
-## Лицензия 📄
+## Лицензия
 
 Лицензия MIT. См. LICENSE для деталей
 
