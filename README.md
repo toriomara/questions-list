@@ -9,6 +9,7 @@
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![shields-fsd-domain](https://feature-sliced.design/)
 
 Welcome to **Questions List**, a modern, responsive web application designed for browsing, filtering, and exploring interview questions. Built with React and Vite for fast development and performance, this app helps users prepare for technical interviews by providing categorized questions with details, ratings, and search capabilities. It follows the Feature-Sliced Design (FSD) architecture for scalability and maintainability.
 
@@ -17,10 +18,10 @@ Welcome to **Questions List**, a modern, responsive web application designed for
 - [Features ✨](#features)
 - [Tech Stack 🛠️](#tech-stack)
 - [Getting started 🚀](#getting-started)
-- [Demo 🛠️](#Demo)
+- [Demo 🛠️](#demo)
 - [Structure Overview 📂](#structure-overview)
 - [Deployment to Vercel 📦](#deployment-to-vercel)
-- [Goal of the Project 🎯](#goal-of-the-project🎯)
+- [Goal of the Project 🎯](#goal-of-the-project)
 - [License 📄](#license)
 
 ## Features
@@ -149,7 +150,7 @@ If you have questions or issues, open an Issue on GitHub. Happy coding! 🚀
 - [Демо 🛠️](#демо)
 - [Обзор структуры 📂](#обзор-структуры)
 - [Деплой на Vercel 📦](#деплой-на-vercel)
-- [Цель проекта 🎯](#цель-проекта)
+- [Цель проекта 🎯](#зачем-вы-разработали-этот-проект?)
 - [Лицензия 📄](#лицензия)
 
 ## Функции
@@ -242,7 +243,7 @@ npm run lint
 - widgets/: Составные UI-блоки (например, QuestionsList, Filters).
 - api/: Серверлесс-функции Vercel для проксирования API-запросов.
 
-[shields-fsd-domain]: https://img.shields.io/badge/Feature--Sliced-Design?style=for-the-badge&color=F2F2F2&labelColor=262224&logoWidth=10&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAALFAAACxQGJ1n/vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB7dKxCQAgDETR0w2cws0cys2cwhEUBbsggikCuVekDHwSQFlYo7Q+8KnmtHdFWMdk2cl5wSsbxGSZw8dm8pX9ZHUTMBUgGU2F718AAAAASUVORK5CYII=
+![shields-fsd-domain]
 
 ## Деплой на Vercel
 
