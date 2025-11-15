@@ -9,7 +9,7 @@
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-![shields-fsd-domain](https://feature-sliced.design/)
+![shields-fsd-domain](https://img.shields.io/badge/Feature--Sliced-Design?style=for-the-badge&color=F2F2F2&labelColor=262224&logoWidth=10&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAALFAAACxQGJ1n/vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB7dKxCQAgDETR0w2cws0cys2cwhEUBbsggikCuVekDHwSQFlYo7Q+8KnmtHdFWMdk2cl5wSsbxGSZw8dm8pX9ZHUTMBUgGU2F718AAAAASUVORK5CYII=)
 
 Welcome to **Questions List**, a modern, responsive web application designed for browsing, filtering, and exploring interview questions. Built with React and Vite for fast development and performance, this app helps users prepare for technical interviews by providing categorized questions with details, ratings, and search capabilities. It follows the Feature-Sliced Design (FSD) architecture for scalability and maintainability.
 
@@ -34,7 +34,7 @@ Welcome to **Questions List**, a modern, responsive web application designed for
 - Error Handling & Empty States: Graceful handling of errors and empty results with user-friendly messages.
 - Deployment Ready: Configured for Vercel with serverless proxy to bypass CORS issues when fetching from external APIs.
 
-The app is structured using FSD principles, dividing code into layers: *entities*, *features*, *pages*, *shared*, and *widgets* for better organization and reusability.
+The app is structured using FSD principles, dividing code into layers: _entities_, _features_, _pages_, _shared_, and _widgets_ for better organization and reusability.
 
 ## Tech Stack
 
@@ -117,7 +117,7 @@ The project follows Feature-Sliced Design (FSD) for modularity:
 - widgets/: Composable UI blocks (e.g., QuestionsList, Filters).
 - api/: Vercel serverless functions for proxying API requests.
 
-![shields-fsd-domain]
+![shields-fsd-domain](https://img.shields.io/badge/Feature--Sliced-Design?style=for-the-badge&color=F2F2F2&labelColor=262224&logoWidth=10&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAALFAAACxQGJ1n/vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB7dKxCQAgDETR0w2cws0cys2cwhEUBbsggikCuVekDHwSQFlYo7Q+8KnmtHdFWMdk2cl5wSsbxGSZw8dm8pX9ZHUTMBUgGU2F718AAAAASUVORK5CYII=)
 
 ## Deployment to Vercel
 
@@ -163,7 +163,7 @@ If you have questions or issues, open an Issue on GitHub. Happy coding! 🚀
 - Обработка ошибок и пустых состояний: Грациозная обработка ошибок и пустых результатов с дружелюбными сообщениями.
 - Готово к деплою: Настроено для Vercel с серверлесс-прокси для обхода проблем CORS при запросах к внешним API.
 
-Приложение структурировано по принципам FSD, разделяя код на слои: *entities*, *features*, *pages*, *shared* и *widgets* для лучшей организации и повторного использования.
+Приложение структурировано по принципам FSD, разделяя код на слои: _entities_, _features_, _pages_, _shared_ и _widgets_ для лучшей организации и повторного использования.
 
 ## Технологический стек
 
@@ -243,7 +243,7 @@ npm run lint
 - widgets/: Составные UI-блоки (например, QuestionsList, Filters).
 - api/: Серверлесс-функции Vercel для проксирования API-запросов.
 
-![shields-fsd-domain]
+![shields-fsd-domain](https://img.shields.io/badge/Feature--Sliced-Design?style=for-the-badge&color=F2F2F2&labelColor=262224&logoWidth=10&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAALFAAACxQGJ1n/vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB7dKxCQAgDETR0w2cws0cys2cwhEUBbsggikCuVekDHwSQFlYo7Q+8KnmtHdFWMdk2cl5wSsbxGSZw8dm8pX9ZHUTMBUgGU2F718AAAAASUVORK5CYII=)
 
 ## Деплой на Vercel
 
